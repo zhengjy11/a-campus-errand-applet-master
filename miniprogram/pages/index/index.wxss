@@ -1,0 +1,40 @@
+/* pages/index/index.wxss */
+image{
+  width: 60px;
+  height: 60px;
+  margin-top: 35px;
+  margin-left: 148px;
+}
+
+.location{
+  width: 90%;
+  height: 150px;
+  background-color: #f5b350;
+  margin-left: 18px;
+  margin-top:20px;
+  border-radius: 5px;
+}
+
+.blue-tooth{
+  width: 90%;
+  height: 150px;
+  background-color: #76c23a;
+  margin-left: 18px;
+  margin-top:20px;
+  border-radius: 5px;
+}
+
+.connect{
+  width: 90%;
+  height: 150px;
+  background-color: #0b988f;
+  margin-left: 18px;
+  margin-top:20px;
+  border-radius: 5px;
+}
+
+text{
+  color: white;
+  font-size: 24px;
+  margin-left: 125px;
+}

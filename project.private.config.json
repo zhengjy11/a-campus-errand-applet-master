@@ -1,0 +1,235 @@
+{
+    "setting": {
+        "compileHotReLoad": false,
+        "urlCheck": true
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "db guide",
+                    "pathName": "pages/databaseGuide/databaseGuide",
+                    "query": ""
+                },
+                {
+                    "name": "pages/getOpenId/index",
+                    "pathName": "pages/getOpenId/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/deployService/index",
+                    "pathName": "pages/deployService/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/selectRecord/index",
+                    "pathName": "pages/selectRecord/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/sumRecordResult/index",
+                    "pathName": "pages/sumRecordResult/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/updateRecord/index",
+                    "pathName": "pages/updateRecord/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/updateRecordResult/index",
+                    "pathName": "pages/updateRecordResult/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/updateRecordSuccess/index",
+                    "pathName": "pages/updateRecordSuccess/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/admin/admin",
+                    "pathName": "pages/admin/admin",
+                    "query": "",
+                    "scene": null,
+                    "partialCompile": {
+                        "enabled": false,
+                        "pages": [
+                            "pages/index/index"
+                        ]
+                    }
+                },
+                {
+                    "name": "pages/my/my",
+                    "pathName": "pages/my/my",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/publish/publish",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/my/my",
+                    "pathName": "pages/my/my",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/dizhi/dizhi",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/add_address/add_address",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/my/my",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/order_detail/order_detail",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/parse/parse",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/help/help",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/location/location",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/navigation_ride/navigation",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/daohang/daohang",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/staticmap/staticmap",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null,
+                    "partialCompile": {
+                        "enabled": true,
+                        "pages": []
+                    }
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/phone/phone",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/bluetooth/bluetooth",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/navigation_ride2/navigation",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/phone2/phone",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    },
+    "projectname": "a-campus-errand-applet-master",
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+    "libVersion": "2.25.3"
+}

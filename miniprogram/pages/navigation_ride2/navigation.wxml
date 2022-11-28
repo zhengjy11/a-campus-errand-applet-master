@@ -1,0 +1,18 @@
+<view class="nav">
+  <image src="../../images/start.png"> </image>
+  <input value="我的位置"/>
+  <image class="arrive" src="../../images/arrive.png"></image>
+  <image src="../../images/end.png"></image>
+  <input value="立业园"/>
+</view>
+<view class="map_box">
+  <map id="navi_map" longitude="120.153595" latitude="30.172757" scale="15.6" markers="{{markers}}" polyline="{{polyline}}">
+  </map>
+</view>
+
+<view class="text_box">
+  <view class="text">全程{{distance}}</view>
+  <view class="text">大约需要{{duration}}</view>
+  <view class="detail_button" bindtouchstart="goDetail">详情</view>
+</view>
+

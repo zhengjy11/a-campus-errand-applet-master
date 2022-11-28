@@ -1,0 +1,19 @@
+<!--pages/index/index.wxml-->
+<navigator class="location" url="../location/location">
+  <image src="/images/location.png"></image>
+  <text>\n</text>
+  <text>导航定位</text>
+</navigator>
+
+  <navigator class="connect" url="../bluetooth/bluetooth">
+    <image src="/images/connect.png"></image>
+    <text>\n</text>
+    <text>车把连接</text>
+  </navigator>
+
+  <navigator class="blue-tooth" url="../bluetooth/bluetooth">
+    <image src="/images/blueTooth.png"></image>
+    <text>\n</text>
+    <text>蓝牙连接</text>
+  </navigator>
+

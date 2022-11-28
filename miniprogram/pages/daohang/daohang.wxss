@@ -1,0 +1,30 @@
+.map_container {
+  margin-bottom: 80rpx;
+  height: 420px;
+  width: 100%;
+}
+
+.map {
+  position: relative;
+  height: 100%;
+  width: 100%;  
+}
+.list-guide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 90rpx;
+}
+
+.list-guide-imgae {
+  height: 80rpx;
+  width: 80rpx;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.list-guide-text {
+  vertical-align: middle;
+  line-height: 90rpx;
+  font-size: 35rpx;
+}

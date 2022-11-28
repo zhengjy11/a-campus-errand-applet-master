@@ -1,0 +1,135 @@
+<!--pages/publish/publish.wxml-->
+
+<wxs src="../../common.wxs" module="morejs" />
+<!--接单大厅-->
+<view class="page">
+    <van-tabs active="{{ type}}" bind:change="type_Change">
+        <van-tab title="待抢单">
+            <view class="map_container">
+                <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap">
+                    <image class="located1" src="../../images/located.png" style="width: 25px; height: 25px;"></image>
+                    <image class="located2" src="../../images/located.png" style="width: 25px; height: 25px;"></image>
+                    <image class="located3" src="../../images/located.png" style="width: 25px; height: 25px;"></image>
+                </map>
+                <view class="info">
+                    <view class="info1">
+                        <text style="color:white; font-size: 40rpx;">35分钟内送达---------4.00元 </text>
+                    </view>
+                    <text>立业园（0.5km）滨江区明德路650号\n</text>
+                    <text>啦喜街（0.6km）滨江区明德路</text>
+                    <button class="btn-qiangdan" style="width: 130px;" bindtap="reminder">抢单</button>
+                </view>
+
+                <view class="info">
+                    <view class="info1">
+                        <text style="color:white; font-size: 40rpx;">50分钟内送达---------7.00元 </text>
+                    </view>
+                    <text>中医药大学（1.5km）滨江区滨文路548号\n</text>
+                    <text>映创城（1.8km）滨江区滨文路585号</text>
+                    <button class="btn-qiangdan" style="width: 130px;" bindtap="reminder">抢单</button>
+                </view>
+
+                <view class="info">
+                    <view class="info1">
+                        <text style="color:white; font-size: 40rpx;">35分钟内送达---------4.00元 </text>
+                    </view>
+                    <text>中医药大学（1.5km）滨江区滨文路548号\n</text>
+                    <text>映创城（1.8km）滨江区滨文路585号</text>
+                    <button class="btn-qiangdan" style="width: 130px;" bindtap="reminder">抢单</button>
+                </view>
+
+            </view>
+        </van-tab>
+        <van-tab title="待取货">
+            <view class="foo" id="foo1">
+                <text>立业园（0.5km）滨江区明德路650号</text>
+                <text>啦喜街（0.6km）滨江区明德路</text>
+                <view class="btn">
+                    <button class="btn-foo"style="width:130px;margin-left:30px;margin-right: 30px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000" bindtap="reminder1">一键取货</button>
+                    <image class="phone" src="../../images/phone1.png"></image>
+                    <!-- <button class="btn-foo" style="width: 130px;"hover-class="btn-foo-hover" 	hover-stay-time="1000000000" bindtap="reminder1">我已取货</button> -->
+                </view>
+            </view>
+            <view class="foo">
+                <text>中医药大学（1.5km）滨江区滨文路548号</text>
+                <text>映创城（1.8km）滨江区滨文路585号</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width:130px;margin-left:30px;margin-right: 30px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000"bindtap="reminder1">一键取货</button>
+                    <image class="phone" src="../../images/phone1.png"></image>
+                    <!-- <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000"bindtap="reminder1">我已取货</button> -->
+                </view>
+            </view>
+            <view class="foo">
+                <text>中医药大学（1.9km）滨江区滨文路548号</text>
+                <text>映创城（1.8km）滨江区滨文路585号</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width:130px;margin-left:30px;margin-right: 30px;"  hover-class="btn-foo-hover" 	hover-stay-time="1000000000"bindtap="reminder1">一键取货</button>
+                    <image class="phone" src="../../images/phone1.png"></image>
+                    <!-- <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000"bindtap="reminder1">我已取货</button> -->
+                </view>
+            </view>
+            <view class="foo" id="foo1">
+                <text>立业园（0.5km）滨江区明德路650号</text>
+                <text>啦喜街（0.6km）滨江区明德路</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width:130px;margin-left:30px;margin-right: 30px;"  hover-class="btn-foo-hover" 	hover-stay-time="1000000000"bindtap="reminder1">一键取货</button>
+                    <image class="phone" src="../../images/phone1.png"></image>
+                    <!-- <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000"bindtap="reminder1">我已取货</button> -->
+                </view>
+            </view>
+            <view class="foo">
+                <text>中医药大学（1.5km）滨江区滨文路548号</text>
+                <text>映创城（1.8km）滨江区滨文路585号</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width:130px;margin-left:30px;margin-right: 30px;"  hover-class="btn-foo-hover" 	hover-stay-time="1000000000"bindtap="reminder1">一键取货</button>
+                    <image class="phone" src="../../images/phone1.png"></image>
+                    <!-- <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000"bindtap="reminder1">我已取货</button> -->
+                </view>
+            </view>
+        </van-tab>
+        <van-tab title="待送达">
+            <view class="foo" wx:if="{{end31 == 0}}">
+                <text>立业园（0.5km）滨江区明德路650号</text>
+                <text>啦喜街（0.6km）滨江区明德路</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000" bindtap="reminder2">我已送达</button>
+                    <button class="btn-foo" style="width: 130px;" bindtap="reminder31">结束订单</button>
+                </view>
+            </view>
+            <view class="foo" wx:if="{{end32 == 0}}">
+                <text>中医药大学（1.5km）滨江区滨文路548号</text>
+                <text>映创城（1.8km）滨江区滨文路585号</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000" bindtap="reminder2">我已送达</button>
+                    <button class="btn-foo" style="width: 130px;" bindtap="reminder32">结束订单</button>
+                </view>
+            </view>
+            <view class="foo" wx:if="{{end33 == 0}}">
+                <text>中医药大学（1.9km）滨江区滨文路548号</text>
+                <text>映创城（1.8km）滨江区滨文路585号</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000" bindtap="reminder2">我已送达</button>
+                    <button class="btn-foo" style="width: 130px;" bindtap="reminder33">结束订单</button>
+                </view>
+            </view>
+            <view class="foo" wx:if="{{end34 == 0}}">
+                <text>立业园（0.5km）滨江区明德路650号</text>
+                <text>啦喜街（0.6km）滨江区明德路</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000" bindtap="reminder2">我已送达</button>
+                    <button class="btn-foo" style="width: 130px;" bindtap="reminder34">结束订单</button>
+                </view>
+            </view>
+            <view class="foo" wx:if="{{end35 == 0}}">
+                <text>中医药大学（1.5km）滨江区滨文路548号</text>
+                <text>映创城（1.8km）滨江区滨文路585号</text>
+                <view class="btn">
+                    <button class="btn-foo" style="width: 130px;" hover-class="btn-foo-hover" 	hover-stay-time="1000000000" bindtap="reminder2">我已送达</button>
+                    <button class="btn-foo" style="width: 130px;" bindtap="reminder35">结束订单</button>
+                </view>
+            </view>
+        </van-tab>
+
+
+    </van-tabs>
+</view>

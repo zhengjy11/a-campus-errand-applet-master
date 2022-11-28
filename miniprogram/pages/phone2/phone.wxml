@@ -1,0 +1,46 @@
+<view class="map_box">
+    <map id="navi_map" longitude="120.153595" latitude="30.167000" scale="15.6" markers="{{markers}}" polyline="{{polyline}}">
+    <!-- <view class="message" wx:if="{{message==1}}">
+        <text>新订单</text>
+        <text>\n</text>
+        <text style="font-size: 16px; margin-bottom: 10px;">已为您抢到当前同一路线的订单</text>
+
+            <text style="color: rgb(121, 121, 121); font-size: 22px;">{{time}}</text>
+        
+    </view> -->
+        <view class="info">
+            <view class="nav">
+                <image class="user" src="../../images/user.jpg"></image>
+                <view class="text">
+                    <text class="title">当前接单</text>
+                    <image class="star" src="../../images/star.png"></image>
+                    <text class="number">5.0</text>
+                </view>
+                <image class="nav1" src="../../images/message.png"></image>
+                <image class="nav2" src="../../images/phone.png"></image>
+            </view>
+            <view class="start">
+                <image src="../../images/start.png"> </image>
+                <text>浙江中医药大学</text>
+            </view>
+            <view class="end">
+                <image src="../../images/end.png"></image>
+                <text>立业园</text>
+            </view>
+            <view class="dt">
+                <view class="distance">
+                    <text class="distance1">剩余路程</text>
+                    <text class="distance2">0.1km</text>
+                </view>
+                <view class="time">
+                    <text class="time1">剩余时间</text>
+                    <text class="time2">1min</text>
+                </view>
+            </view>
+            <view>
+            <button class="btn" style="width: 70%; height: 50px;">确认送达</button>
+            </view>
+        </view>
+    </map>
+
+</view>
